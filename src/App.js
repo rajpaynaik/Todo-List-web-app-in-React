@@ -1,14 +1,12 @@
-import React from "react";
-import TodoList from "./todos/TodoList";
+import React from 'react';
+import { hot } from 'react-hot-loader';
+import TodoList from './todos/TodoList';
+import './App.css';
 
-function App() {
-  return (
-    <>
-      <div className="App">
+const App = () => (
+    <div className="App">
         <TodoList />
-      </div>
-    </>
-  );
-}
+    </div>
+);
 
-export default App;
+export default hot(module)(App);
